@@ -1,1 +1,19 @@
 /*  your css code here. If applicable */
+.cellBoard {
+    width: 150px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.cell {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+}
+
+.gameBoard {
+    display: none;
+}
