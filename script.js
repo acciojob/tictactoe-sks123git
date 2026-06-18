@@ -6,7 +6,7 @@ const form = document.getElementById("input-form");
 const start = document.getElementById("submit");
 const gameBoard = document.querySelector(".gameBoard");
 
-let currentPlayer = "X";
+let currentPlayer = "x";
 let gameActive = true;
 
 let playerName1 = "";
@@ -64,7 +64,7 @@ function handleClick(e) {
             cell.textContent = currentPlayer;
 
             if (checkWinner()) {
-                status.textContent = `${currentPlayer === "X"? playerName1 : playerName2} congratulations you won!`;
+                status.textContent = `${currentPlayer === "x"? playerName1 : playerName2} congratulations you won!`;
                 gameActive = false;
                 return;
             }
@@ -75,7 +75,7 @@ function handleClick(e) {
                 return;
             }
 
-            currentPlayer = currentPlayer === "X" ? "O" : "X";
+            currentPlayer = currentPlayer === "x" ? "o" : "x";
 
             status.textContent = `Player ${currentPlayer === "X"? playerName1 : playerName2}'s Turn`;
         }
