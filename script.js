@@ -9,8 +9,8 @@ const gameBoard = document.querySelector(".gameBoard");
 let currentPlayer = "x";
 let gameActive = true;
 
-let playerName1 = "";
-let playerName2 = "";
+let playerName1 = "Player1";
+let playerName2 = "Player2";
 
 let board = [
     "","","",
