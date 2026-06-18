@@ -77,7 +77,7 @@ function handleClick(e) {
 
             currentPlayer = currentPlayer === "x" ? "o" : "x";
 
-            status.textContent = `Player ${currentPlayer === "X"? playerName1 : playerName2}'s Turn`;
+            status.textContent = `${currentPlayer === "X"? playerName1 : playerName2}, you're up`;
         }
 
         function checkWinner() {
