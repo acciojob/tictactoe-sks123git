@@ -36,8 +36,8 @@ start.addEventListener("click", initializeGame);
 function initializeGame(e) {
     e.preventDefault();
 
-    playerName1 = document.getElementById("player-1").value;
-    playerName2 = document.getElementById("player-2").value;
+    playerName1 = document.getElementById("player1").value;
+    playerName2 = document.getElementById("player2").value;
 
     form.style.display = "none";
     gameBoard.style.display = "block";
